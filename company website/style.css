@@ -376,6 +376,28 @@ label {
     color: #24262b;
     background-color: #ffffff;
   }
+  #containe{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: #dbd7d7;
+    
+      }
+      #containe div{
+    
+        height: 270px;
+        width: 50%;
+        background: #ffffff;
+        margin: 0;
+        text-align: center;
+        border-radius: 5px;
+        
+      }
+      #map {
+        height: 10%;
+      }
   
   /*responsive*/
   @media(max-width: 767px){
