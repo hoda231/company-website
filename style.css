@@ -30,7 +30,7 @@
    column-gap: 10px;
    font-size: 30px;
    font-weight: 500;
-   color: rgb(201, 126, 92);
+   color: rgb(212, 75, 11);
    
  }
  .navbar img {
@@ -55,6 +55,7 @@
  
 .wrapper{
    position: absolute;
+   
     max-width: 1200px;
     width: 100%;
     margin: 180px ;
@@ -65,10 +66,17 @@
     background: #fff;
     box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
   }
+  @media(max-width: 574px){
+    .wrapper{
+      width: 100%;
+  }
+  }
+
   .wrapper header{
     font-size: 30px;
     font-weight: 600;
     padding-bottom: 20px;
+    display: flex;
   }
   .wrapper nav{
     position: relative;
@@ -77,21 +85,46 @@
     display: flex;
     align-items: center;
   }
-  .wrapper nav label{
-    display: block;
-    height: 100%;
-    width: 100%;
-    text-align: center;
-    line-height: 50px;
+  .lab{
+    display:block;
+    width: 170px;
+    text-align:center;
+    line-height: 0px;
     cursor: pointer;
     position: relative;
     z-index: 1 ;
-    color: #b85217;
+    color: #b4561f;
     font-size: 17px;
     border-radius: 5px;
-    margin: 5px 10px;
+   margin-left:0px;
+  
     transition: all 0.3s ease;
   }
+  .icon {
+    color: #b75322;
+    cursor: pointer;
+    visibility: hidden;
+    
+  }
+  @media(max-width: 767px){
+    .icon {
+      width:85px;
+      visibility: visible;
+     
+  }
+  }
+
+  @media(max-width: 767px){
+    .lab {
+    display: none;
+
+     
+  }
+  }
+
+  
+  
+  
   
   #home:checked ~ nav label.home,
   #blog:checked ~ nav label.blog,
@@ -146,6 +179,7 @@
   {
     display: block;
   }
+  
   img{
     width: 100%;
     height: 400px;
@@ -157,19 +191,49 @@
 display: flex;
 justify-content: center;
 align-items: center;
-
+width: 100%;
 background-color: #dbd7d7;
 
   }
-  #container div{
+  @media(max-width: 574px){
+    #container{
+      flex-direction:row;
+      flex-flow: wrap;
+      align-items: center;
+      width: 100%;
 
+  }
+  }
+ 
+  
+  #container div{
+    
+position: relative;
     height: 470px;
     width: 935px;
     background: #ffffff;
-    margin: 20px;
+    margin: 0px 0px 10px 10px;
     text-align: center;
     border-radius: 9px;
     box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
+  }
+  @media(max-width: 767px){
+    #container div {
+      flex-direction:row;
+      
+      align-items:baseline;
+      width: 50%;
+      margin-bottom: 30px;
+  }
+  }
+  .bran{
+    
+    display: inline-flex;
+    position: relative;
+    font-size:small;
+    
+    
+    
   }
   .cli{
     display: flex;
@@ -229,6 +293,7 @@ background-color: #dbd7d7;
         border-radius: 9px;
         box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
       }
+     
   input[type="text"],
 input[type="massage"],
 input[type="email"],
@@ -282,12 +347,13 @@ label {
     background: rgb(168, 66, 48);
     border-radius: 9px;
     cursor: pointer;
+   }
   
   
-  }
+  
   .watch:hover {
     opacity: 0.8;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
     background-blend-mode: #aaa;
   }
   
@@ -318,7 +384,7 @@ label {
       padding: 70px 0;
       display: flex;
       position: relative;
-      top: 1900px;
+      top: 3300px;
   }
 
   .footer-col{
@@ -411,8 +477,7 @@ label {
       width: 100%;
   }
   }
-  
-  
+
   
   
   
